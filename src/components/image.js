@@ -38,9 +38,9 @@ const Image = () => {
       fixed={[
         data.placeholderImage.childImageSharp.fixed,
         {
-          ...data.placeholderImage.childImageSharp.fixed,
-          media: "(min-width: 768px)",
-        }
+          ...data.placeholderImageLg.childImageSharp.fixed,
+          media: "(min-width: 5000px)",
+        },
       ]}
     />
   )

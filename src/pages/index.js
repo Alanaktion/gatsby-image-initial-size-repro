@@ -9,8 +9,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <p>
-      This image will be sized incorrectly on small viewports (&lt;768px), but
+      This image will be sized incorrectly on most viewports (&lt;5000px), but
       only on production-mode builds, and only on the initial pageload.
+      <br />
+      The image should render at 32px for any reasonably-sized viewport, but the
+      inline <code>style</code> set by <code>gatsby build</code> matches the
+      larger image rather than the default, and only switches when the component
+      re-renders client-side.
     </p>
     <Image />
     <br />

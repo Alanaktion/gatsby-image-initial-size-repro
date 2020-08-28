@@ -18,14 +18,14 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
-          fixed(width: 128, height: 128) {
+          fixed(width: 32, height: 32) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       placeholderImageLg: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
-          fixed(width: 512, height: 512) {
+          fixed(width: 128, height: 128) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -39,7 +39,7 @@ const Image = () => {
         data.placeholderImage.childImageSharp.fixed,
         {
           ...data.placeholderImage.childImageSharp.fixed,
-          media: "(min-width: 5000px)"
+          media: "(min-width: 768px)",
         }
       ]}
     />

@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <p>
-      This image will be sized incorrectly on most viewports (&lt;5000px), but
+      This image will be sized incorrectly on small viewports (&lt;768px), but
       only on production-mode builds, and only on the initial pageload.
     </p>
     <Image />
